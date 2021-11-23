@@ -1,17 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css' // import do arquivo CSS interno
+import ReactDOM from "react-dom"
+import React from 'react'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import App from './App'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render( // coloca o arquivo na single page html
+  <App/>,
+  document.getElementById('root') // referenciando a single page
+)
+
+// ESSE JS SERVE SÓ PRA REFERENCIAR O ARQUIVO PRINCIPAL, LEMBRE-SE DISSO.
